@@ -32,7 +32,7 @@ public class Mazo {
 	public void baraja() {
 		Collections.shuffle(cartas);
 	}
-	public Carta solicitarCartas() throws NoHayMasCartasException {
+	public Carta solicitarCarta() throws NoHayMasCartasException {
 		if (this.cartas.size()==0) {
 			throw new NoHayMasCartasException();
 		}
